@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- fonts-manrope -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind and daisy link -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind custom css -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "dark-text": "#1C1C1C",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <title>Tea House</title>
+  </head>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row-reverse gap-24">
+          <!-- image column -->
+          <div>
+            <img src="images/banner.png" class="max-w-sm" />
+            <!-- rating card div -->
+            <div
+              class="rating flex items-center gap-2 drop-shadow-lg bg-white p-3 w-48 -mt-16 rounded-lg"
+            >
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400 checked"
+              />
+              <!-- text column -->
+              <div>
+                <h3 class="text-3xl text-dark-text font-extrabold">5.0</h3>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-[5rem] font-extrabold text-dark-text leading-tight">
+              It's good<br />
+              tea time at The <br />Tea House
+            </h1>
+            <p class="py-6 font-medium block max-w-96">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
